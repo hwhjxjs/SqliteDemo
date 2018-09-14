@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="StudentTableViewCell" customModule="SqliteDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="297" height="106.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1b-xa-HaT">
+                        <rect key="frame" x="21" y="44.5" width="80" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="MTX-hZ-MZX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学号：455564" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mck-Pl-gzO">
+                        <rect key="frame" x="96" y="30.5" width="90" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="U25-ml-GO0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体重" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PP-4d-ErK">
+                        <rect key="frame" x="236" y="61" width="25" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性别:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fo-Zp-IYo">
+                        <rect key="frame" x="96" y="60.5" width="90" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="pro-52-rSu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身高" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Duo-t5-DxZ">
+                        <rect key="frame" x="236" y="30" width="56" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="Eh5-Bt-voq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q1b-xa-HaT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="4NT-PW-aLD"/>
+                    <constraint firstItem="9fo-Zp-IYo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="4VU-tn-cmG"/>
+                    <constraint firstItem="Mck-Pl-gzO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-15" id="QV8-Oo-KlP"/>
+                    <constraint firstItem="Duo-t5-DxZ" firstAttribute="leading" secondItem="Mck-Pl-gzO" secondAttribute="trailing" constant="50" id="UxF-hV-TQT"/>
+                    <constraint firstItem="9fo-Zp-IYo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="15" id="aLU-nw-ROo"/>
+                    <constraint firstItem="Mck-Pl-gzO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="e6C-Am-BBS"/>
+                    <constraint firstItem="Duo-t5-DxZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-15" id="h4k-fG-AMg"/>
+                    <constraint firstItem="q1b-xa-HaT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nV5-Eu-23T"/>
+                    <constraint firstItem="1PP-4d-ErK" firstAttribute="leading" secondItem="9fo-Zp-IYo" secondAttribute="trailing" constant="50" id="onA-Ky-N9a"/>
+                    <constraint firstItem="1PP-4d-ErK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="15" id="yQn-6j-69f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="heightLabel" destination="Duo-t5-DxZ" id="rGq-7S-l2h"/>
+                <outlet property="nameLabel" destination="q1b-xa-HaT" id="6PO-9B-qi3"/>
+                <outlet property="sexLabel" destination="9fo-Zp-IYo" id="wmc-sd-Scg"/>
+                <outlet property="stuNolabel" destination="Mck-Pl-gzO" id="6QU-ay-HZm"/>
+                <outlet property="weightLabel" destination="1PP-4d-ErK" id="olI-YJ-Kiu"/>
+            </connections>
+            <point key="canvasLocation" x="0.5" y="-39.5"/>
+        </tableViewCell>
+    </objects>
+</document>
